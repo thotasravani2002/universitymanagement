@@ -165,11 +165,12 @@ public class University {// class
 					System.out.print("enter professor name");
 					String professorName=scanner.nextLine();
 					university.addProfessor(professorName);
-				
+				        break;
 				case 3:
 					System.out.print("enter the course title: ");
 					String courseTitle=scanner.nextLine();
 					university.addStudent(courseTitle);
+					break;
 				case 4:
 					System.out.print("enter the student name: ");
 					String enrollStudent=scanner.nextLine();
@@ -183,6 +184,7 @@ public class University {// class
 					System.out.print("enter course title: ");
 					String assignCourse=scanner.nextLine();
 					university.assignCourseToProfessor(assignProfessor, assignCourse);
+					break;	
 				case 6:
 					university.listStudents();
 					break;
